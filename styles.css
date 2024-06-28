@@ -48,10 +48,15 @@
     background-color: white;
     align-items: center;
     justify-content:center;
+    margin-top: 5px;
     margin-right:20px;
+    margin-bottom: 20px;
     .logo{
+        background-color: white;
+      
+        
         img{
-            
+            display: flex;
             background-color: white;
             float: left;
             padding-left: 20px;
@@ -60,11 +65,13 @@
         
         
     }
+    
     .navbar-link{
-        display: flex;
+    display: inline-flex;
        align-items: center;
        background-color: white;
        margin-left: 180px;
+       position:absolute;
         
     }
     a{
@@ -102,11 +109,15 @@
       .search-container button {
         display: flex;
         padding: 6px;
-        
+        background-color: whitesmoke;
         border: none;
         cursor: pointer;
         border-radius: 50px;
         
+      }
+      .search-container button a{
+        background-color: whitesmoke;
+        border-radius: 50px;
       }
       
       .search-container button img {
@@ -135,6 +146,14 @@
        
         display: flex;
       }
+      .nav-icons button a{
+        background-color: white;
+        color: black;
+      }
+      .nav-icons button a:hover{
+        background-color: white;
+        border-radius: 50px;
+      }
        
         .nav-icons .icon{
             font-size: 30px;
@@ -155,6 +174,7 @@
        .nav-icons .bag:hover{
         background-color: grey;
         border-radius: 50px;
+        
        }
         }
 
