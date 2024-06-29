@@ -87,7 +87,7 @@
         display: flex;
         border-style:none;
         border-radius: 50px;
-        transition: width 2s ease-in, height 3s ease-in, transform 3s ease-in ;
+        transition: width 0ms ease-in, height 1ms ease-in, transform 150ms ease-in ;
         
         
     }
@@ -209,8 +209,9 @@
       .slides {
           display:flex;
           width: 200%;
-          animation: slide-animation 2s infinite;
-          animation-duration: 5s;
+          animation: slide-animation  infinite;
+          animation-duration: 5s; 
+
           
       }
       
