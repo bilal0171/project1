@@ -223,8 +223,8 @@
       
       justify-content: center;
       align-items: center;
-      background: #f0f0f0;
-      border: 1px solid #ccc;
+      background:whitesmoke;
+      border: 1px solid whitesmoke;
   }
   
    .slide p, .slide a {
@@ -324,6 +324,7 @@ h1{
  
 }
 .image-scroll .image-set{
+  background-color: white;
   height: 50%;
   width: 100%;
  object-fit: contain;
@@ -348,25 +349,36 @@ h1{
   margin:0px;
   color: white;
 }
+.image-scroll .image-set figcaption {
+  background-color: white;
+}
 
 .image-scroll .image-set figcaption a{
   font-size: 25px;
   font-weight: bolder;
+  background-color: white;
   color: black;
   text-decoration: none;
  line-height: 5;
 }
+.footer-1{
+  display: flex;
+  background-color: white;
+}
 .footer-1 table{
   align-content: center;
+  background-color: white;
   
 }
 .footer-1 table li{
+  background-color: white;
   list-style: none;
   list-style-type: none;
   
  
 }
 .footer-1 table, th,td {
+  background-color: white;
  
   line-height: 3;
   padding-left: 100px;
@@ -380,6 +392,7 @@ h1{
 .footer-1 table td a{
   text-decoration: none;
   color: grey;
+  background-color: white;
   
 }
 .footer-1 table th{
@@ -393,6 +406,57 @@ h1{
   display: list-item;
   
   
+}
+
+.footer-base{
+  background-color: white;
+  width: 100%;
+}
+.footer-base footer {
+  border-top: 1px solid grey;
+  margin-top: 50px;
+  padding-top: 20px;
+  background-color: white;
+  
+  
+
+  
+  
+ 
+  
+  
+}
+.footer-base table li{
+  width: 100%;
+  background-color: white;
+  list-style-position:outside;
+  list-style-type: none;
+}
+.footer-base table, th,td {
+ background-color: white;
+  line-height: 3;
+  
+ 
+  text-align: left;
+  justify-content: left;
+  font-size: large;
+  vertical-align: top;
+  
+}
+.footer-base table td a{
+  text-decoration: none;
+  background-color: white;
+  color: grey;
+  
+}
+.footer-base footer th, tr,td{
+  text-align:left;
+}
+.footer-base th .location{
+  font-size: 20px;
+  position:relative;
+  
+
 }
 
   
