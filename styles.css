@@ -1,0 +1,473 @@
+*{
+  margin: 0%;
+  background-color:whitesmoke ;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.top-navbar{
+      
+      margin:0;
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+    
+     font-family: Arial, Helvetica, sans-serif;
+     padding-top: 10px;
+     padding-bottom: 5px;
+
+  img{
+     height: 25px;
+     width: 25px;
+     transform: translateX(42px); 
+     margin: -2px;
+  }
+}
+.top-navbar ul{
+  list-style-type: none;
+  margin: 0px;
+  padding-right: 22px;
+  
+}
+.top-navbar ul li{
+  font-size:13px;
+  display: inline-block;
+}
+.top-navbar ul li a{
+  text-decoration: none;
+  color: black;
+  
+
+}
+.top-navbar ul li:not(:last-child)::after{
+  content: "|";
+  margin:9px;
+  color:black;
+
+}
+.navbar{
+  display:inline-flex;
+  background-color: white;
+  align-items: left;
+  justify-content:left;
+  margin-top: 5px;
+  margin-right:20px;
+  margin-bottom: 20px;
+  padding-left: 80px;
+  .logo{
+      background-color: white;
+    
+      
+      img{
+          display: flex;
+          background-color: white;
+          float: left;
+          padding-right:10px;
+
+      }
+      
+      
+  }
+  
+  .navbar-link{
+    border-style: none;
+    display: inline-flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: white;
+     margin-left: 170px;
+     position:absolute;
+      
+  }
+  a{
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      
+      padding: 15px;
+  }
+  .search-container{
+      display: flex;
+      border-style:none;
+      border-radius: 50px;
+      transition: width 2s ease-in, height 3s ease-in, transform 3s ease-in ;
+      
+      
+  }
+  .search-container:focus-within{
+   
+    width: 1000px;
+    transform:translateX(-600px) ;
+    border-style: solid;
+  }
+  
+    
+    .search-container input[type="search"]  {
+      border-radius: 50px;
+      border-style: none;
+      border-color: none;
+      justify-content: center;
+      
+      display: flex;
+      align-items: center;
+      transition: width 2s, transform 1s ease-in ;
+      
+    }
+    .search-container input[type="search"]:focus{
+      outline: none;
+      border: none;
+    }
+    
+    
+
+
+    
+     
+      
+
+  
+  
+      
+    
+    .search-container button {
+      display: flex;
+      padding: 6px;
+      background-color: whitesmoke;
+      border: none;
+      cursor: pointer;
+      border-radius: 50px;
+     
+      
+    }
+    .search-container button a{
+      background-color: whitesmoke;
+      border-radius: 50px;
+    
+    }
+    
+    .search-container button img {
+      background-color: whitesmoke;
+      display: flex;
+      height: 30px;
+      width: 30px;
+      margin-left: 0px;
+      border-radius: 50px;  
+    }
+    .search-container button img:hover{
+      background-color: grey;
+      
+    }
+    .nav-icons{
+     
+      display: flex;
+     
+    }
+    .nav-icons button{
+     
+      border-style: none;
+      background-color: white;
+      
+     
+     
+      display: flex;
+    }
+    .nav-icons button a{
+      background-color: white;
+      color: black;
+    }
+    .nav-icons button a:hover{
+      background-color: white;
+      border-radius: 50px;
+    }
+     
+      .nav-icons .icon{
+          font-size: 30px;
+         background-color: white;
+         
+         
+          
+      }
+      .nav-icons .icon:hover{
+          background-color: grey;
+          border-radius: 50px;
+      }
+     .nav-icons .bag{
+      font-size: 30px;
+      background-color: white;
+
+     }
+     .nav-icons .bag:hover{
+      background-color: grey;
+      border-radius: 50px;
+      
+     }
+      }
+      .slider {
+        width: 100%;
+        overflow:hidden;
+        position:relative;
+        
+    }
+    
+    .slides {
+        display:flex;
+        width: 200%;
+        animation: slide-animation  infinite;
+        animation-duration: 10s;
+        
+    }
+    
+    .slide {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      
+      justify-content: center;
+      align-items: center;
+      background:whitesmoke;
+      border: 1px solid whitesmoke;
+  }
+  
+   .slide p, .slide a {
+     font-size:small;
+     color: black;
+     font-weight: bold;
+  }
+  .image{
+      display: flex;
+      padding-left: 40px;
+      padding-right: 40px;
+      object-fit: cover;
+  }
+  .image a{
+    display: flex;
+   float: left;
+   width: 50%;
+   height: 400px;
+  
+   
+    
+  }
+  .image img{
+    width: 100%;
+    
+
+    
+  }
+    
+  
+
+    
+    @keyframes slide-animation {
+        0% { transform: translateX(0%); }
+        25% { transform: translateX(0%); }
+        50% { transform: translateX(-50%); }
+        75% { transform: translateX(-50%); }
+        100% { transform: translateX(0%); }
+    }
+.section1{
+  padding-top: 24px;
+  background-color: white;
+  margin: 0px;
+  text-align: center;
+  justify-content: center;
+  line-height: 1;
+
+}
+.section1 a{
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+.section1 .line1,.line2,.line3{
+  background-color: white;
+ 
+
+}
+.section1 .line1,.line3 a{
+  font-size: small;
+  font-size: 15px;
+ 
+
+
+}
+.section1 .line2 a{
+  font-size: 60px;
+  font-weight: 1000;
+  text-transform:uppercase ;    
+}
+.section1 .button{
+  padding-top: 10px;
+  background-color: white;
+  margin: 0;
+  
+  border-radius: 50px;
+}
+.section1 .button a{
+  
+  color: white;
+  border-width: 20px;
+  background-color: black;
+  border: 10px solid black;
+  border-radius: 20px;
+  font-size: 20px;
+
+
+}
+h1{
+  background-color: white;
+}
+.image-scroll{
+  display: flex;
+  overflow-x: scroll;
+  background-color: white;
+ 
+ 
+}
+.image-scroll .image-set{
+  background-color: white;
+  height: 50%;
+  width: 100%;
+ object-fit: contain;
+  display: flex;
+  border: none;
+  
+  padding-top: 40px; 
+  
+}
+
+.image-scroll .image-set a {
+  
+  img{
+    width: 300px;
+    height: 300px;
+    
+    color: white;
+    
+  }
+  object-fit: contain;
+  padding-left: 30px;
+  margin:0px;
+  color: white;
+}
+.image-scroll .image-set figcaption {
+  background-color: white;
+}
+
+.image-scroll .image-set figcaption a{
+  font-size: 25px;
+  font-weight: bolder;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+ line-height: 5;
+}
+.footer-1{
+  display: flex;
+  background-color: white;
+}
+.footer-1 table{
+  align-content: center;
+  background-color: white;
+  
+}
+.footer-1 table li{
+  background-color: white;
+  list-style: none;
+  list-style-type: none;
+  
+ 
+}
+.footer-1 table, th,td {
+  background-color: white;
+ 
+  line-height: 3;
+  padding-left: 100px;
+ 
+  text-align: left;
+  justify-content: center;
+  font-size: 20px;
+  vertical-align: top;
+  
+}
+.footer-1 table td a{
+  text-decoration: none;
+  color: grey;
+  background-color: white;
+  
+}
+.footer-1 table th{
+ 
+  vertical-align: top;
+}
+ .footer-1 table  li:nth-child(n+5){
+  display: none;
+}
+.footer-1 table:hover li{
+  display: list-item;
+  
+  
+}
+
+.footer-base{
+  background-color: white;
+  width: 100%;
+}
+.footer-base footer {
+  border-top: 1px solid grey;
+  margin-top: 50px;
+  padding-top: 20px;
+  background-color: white;
+  
+  
+
+  
+  
+ 
+  
+  
+}
+.footer-base table li{
+  width: 100%;
+  background-color: white;
+  list-style-position:outside;
+  list-style-type: none;
+}
+.footer-base table, th,td {
+ background-color: white;
+  line-height: 3;
+  
+ 
+  text-align: left;
+  justify-content: left;
+  font-size: large;
+  vertical-align: top;
+  
+}
+.footer-base table td a{
+  text-decoration: none;
+  background-color: white;
+  color: grey;
+  
+}
+.footer-base footer th, tr,td{
+  text-align:left;
+}
+.footer-base th .location{
+  font-size: 20px;
+  position:relative;
+  
+
+}
+
+  
+
+
+ 
+
+      
+    
+    
+          
+      
+
+    
